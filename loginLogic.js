@@ -1,6 +1,6 @@
 import {restApi} from '#apis';
 import {setStorage} from '#utils/rn.async.storage';
-import {numreg, pwreg} from '#commons/regulation';
+
 
 export const sendLogin = async ({data, navigation}) => {
   await restApi.post('api', data).then(res => {
